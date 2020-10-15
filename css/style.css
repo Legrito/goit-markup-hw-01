@@ -8,6 +8,7 @@
 /*Стили логотипа*/
 
 body {
+  font-family: "Raleway";
   background-color: #e5e5e5;
   color: #757575;
 }
@@ -15,10 +16,12 @@ body {
 a {
   text-decoration: none;
 }
+
 .list {
-  text-decoration: none;
+  list-style: none;
 }
 
+/* Стили шапки */
 .logo {
   font-family: "Raleway";
   font-size: 26px;
@@ -38,4 +41,50 @@ a {
 .site-nav .list-item:hover,
 .site-nav .list-item:focus {
   color: #2196f3;
+}
+
+.contacts-item {
+  color: #757575;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: #2196f3;
+}
+
+/* Стили героя */
+.hero-title {
+  color: #ffffff;
+}
+
+/* Общие стили секции */
+.section-title {
+  color: #212121;
+}
+
+/* Стили секции "Преимущества" */
+.features-title {
+  color: #212121;
+}
+
+/* Стили секции "Команда" */
+.team-member .name {
+  color: #212121;
+}
+
+/* Стили подвала */
+.logo-footer {
+  color: #ffffff;
+}
+
+.adress-list {
+  list-style: none;
+}
+
+.adress-list .adress-item {
+  color: #ffffff;
+}
+
+.adress-item .adress-link {
+  color: rgba(255, 255, 255, 0.6);
 }
