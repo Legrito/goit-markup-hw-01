@@ -6,23 +6,35 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Хедер -->
     <header>
-      <nav>
-        <a href="./index.html"> WebStudio</a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+      <div>
+        <nav>
+          <a class="logo" href="./index.html">
+            <span class="logo-blue">Web</span>Studio</a
+          >
+          <ul class="site-nav list">
+            <li><a class="link" href="./index.html">Студия</a></li>
+            <li>
+              <a class="link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <ul class="contacts list">
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li>
-          <a href="tel:+380961111111" class="phone-number">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
-
     <main>
       <div>
         <ul>
@@ -84,19 +96,29 @@
       </div>
     </main>
 
-    <footer>
-      <p>WebStudio</p>
-      <address>
-        <ul id="contacts">
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li>
-            <a href="tel:+380961111111" class="phone-number"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <!-- Футер -->
+    <footer class="footer">
+      <div>
+        <p class="logo"><span class="logo-blue">Web</span>Studio</p>
+        <address class="adress">
+          <ul class="adress-list list" id="contacts">
+            <li class="adress-item">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="adress-item">
+              <a class="adress-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="adress-item">
+              <a
+                class="adress-link"
+                href="tel:+380961111111"
+                class="phone-number"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
