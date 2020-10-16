@@ -1,9 +1,18 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --inversion-text-color: #ffffff;
+  --background-color: #e5e5e5;
+  --dark-background-color: #2f303a;
+}
+
 /* основной цвет текста #212121 */
 /* цвет абзаца #757575 */
 /* белый #FFFFFF */
 /* цветовой акцент #2196F3 */
 /* цвет фона #E5E5E5 */
-/* вторичный цвет фона #2F303A */
+/* цвет фона #2F303A */
 
 /*Стили логотипа*/
 
@@ -13,8 +22,8 @@ body {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 3%;
-  background-color: #e5e5e5;
-  color: #757575;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
 }
 
 a {
@@ -34,7 +43,7 @@ a {
 }
 
 .logo-blue {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .site-nav .list-item {
@@ -42,12 +51,12 @@ a {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 2%;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .site-nav .list-item:hover,
 .site-nav .list-item:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contacts-item {
@@ -60,16 +69,19 @@ a {
 
 .contacts-item:hover,
 .contacts-item:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Стили героя */
+.hero {
+  background-color: var(--dark-background-color);
+}
 .hero-title {
   font-size: 60px;
   font-weight: 900;
   font-style: normal;
   letter-spacing: 6%;
-  color: #ffffff;
+  color: var(--inversion-text-color);
 }
 
 .hero-button {
@@ -81,8 +93,8 @@ a {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 6%;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--inversion-text-color);
 }
 
 /* Общие стили секций */
@@ -90,7 +102,7 @@ a {
   font-size: 36px;
   font-weight: 700;
   font-style: normal;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 /* Стили секции "Преимущества" */
@@ -99,15 +111,15 @@ a {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 /* Стили секции "Команда" */
 .team-member .name {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .team-member .position {
@@ -115,8 +127,11 @@ a {
 }
 
 /* Стили подвала */
+.footer {
+  background-color: var(--dark-background-color);
+}
 .logo-footer {
-  color: #ffffff;
+  color: var(--inversion-text-color);
 }
 
 .adress-list {
@@ -125,7 +140,7 @@ a {
 
 .adress-list .adress-item {
   font-style: normal;
-  color: #ffffff;
+  color: var(--inversion-text-color);
 }
 
 .adress-item .adress-link {
