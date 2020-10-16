@@ -1,8 +1,10 @@
 :root {
+  --black-text-color: #000000;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --inversion-text-color: #ffffff;
+  --white-text-color: #ffffff;
+  --opacity-white-text-color: rgba(255, 255, 255, 0.6);
   --background-color: #e5e5e5;
   --dark-background-color: #2f303a;
 }
@@ -39,14 +41,14 @@ a {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  color: #000;
+  color: var(--black-text-color);
 }
 
 .logo-blue {
   color: var(--accent-color);
 }
 
-.site-nav .list-item {
+.site-nav .link {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -54,12 +56,15 @@ a {
   color: var(--title-text-color);
 }
 
-.site-nav .list-item:hover,
-.site-nav .list-item:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
-.contacts-item {
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contacts .link {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -67,8 +72,8 @@ a {
   color: #757575;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.conyacts .link:hover,
+.conyacts .link:focus {
   color: var(--accent-color);
 }
 
@@ -81,10 +86,10 @@ a {
   font-weight: 900;
   font-style: normal;
   letter-spacing: 6%;
-  color: var(--inversion-text-color);
+  color: var(--white-text-color);
 }
 
-.hero-button {
+.button {
   width: 200px;
   height: 50px;
   border-style: none;
@@ -94,7 +99,7 @@ a {
   font-style: normal;
   letter-spacing: 6%;
   background-color: var(--accent-color);
-  color: var(--inversion-text-color);
+  color: var(--white-text-color);
 }
 
 /* Общие стили секций */
@@ -130,8 +135,8 @@ a {
 .footer {
   background-color: var(--dark-background-color);
 }
-.logo-footer {
-  color: var(--inversion-text-color);
+.footer .logo {
+  color: var(--white-text-color);
 }
 
 .adress-list {
@@ -140,10 +145,10 @@ a {
 
 .adress-list .adress-item {
   font-style: normal;
-  color: var(--inversion-text-color);
+  color: var(--white-text-color);
 }
 
 .adress-item .adress-link {
   font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--opacity-white-text-color);
 }
